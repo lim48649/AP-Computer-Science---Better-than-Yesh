@@ -1,3 +1,7 @@
+/**
+ * @author yesh0907
+ * Second AP CS Program
+ */
 
 public class Second {
 
