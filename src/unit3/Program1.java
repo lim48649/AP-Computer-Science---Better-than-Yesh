@@ -14,20 +14,44 @@ public class Program1 {
 		int num2 = input.nextInt();
 		int num3 = input.nextInt();
 		
-		int largest = num1;
-		int middle = num2;
-		int smallest = num3;
+		int largest = 0;
+		int middle = 0;
+		int smallest = 0;
 		
-		if (largest < num2)
-			largest = num2;
-		if (largest < num3)
-			largest = num3;
-		
-		if (middle < smallest) {
-			int tempMid = middle;
-			middle = smallest;
-			smallest = tempMid;
+		if (num1 >= num2 && num1 >= num3) {
+			largest = num1;
+			if (num2 > num3) {
+				middle = num2;
+				smallest = num3;
+			}
+			else {
+				middle = num3;
+				smallest = num2;
+			}
 		}
+		else if (num2 >= num1 && num2 >= num3) {
+			largest = num2;
+			if (num1 > num3) {
+				middle = num1;
+				smallest = num3;
+			}
+			else {
+				middle = num3;
+				smallest = num1;
+			}
+		}
+		else {
+			largest = num3;
+			if (num1 > num2) {
+				middle = num1;
+				smallest = num2;
+			}
+			else {
+				middle = num2;
+				smallest = num1;
+			}
+		}
+		
 		
 		System.out.println("Smallest to Largest: " + smallest + ", " + middle + ", " + largest);
 	}
