@@ -13,10 +13,14 @@ public class Program2 {
 		double side3 = input.nextDouble();
 		
 		boolean possible = check(side1, side2, side3);
-		if (possible)
+		if (possible) {
 			System.out.println("The triangle is possible");
-		else
+			String type = typeOfTriangle(side1, side2, side3);
+			System.out.println("Type: " + type);
+		}
+		else {
 			System.out.println("The triangle is not possible");
+		}
 	}
 
 	private static boolean check(double side1, double side2, double side3) {
@@ -27,5 +31,15 @@ public class Program2 {
 			return true;
 		
 		return false;
+	}
+	
+	private static String typeOfTriangle(double a, double b, double c) {
+		double aPlusBSquared = Math.pow(a, 2) + Math.pow(b, 2);
+		double cSquared = Math.pow(c, 2);
+		if (aPlusBSquared > cSquared)
+			return "Acute Triangle";
+		else if (aPlusBSquared < cSquared)
+			return "Obtuse Triangle";
+		return "Right Triangle";
 	}
 }
