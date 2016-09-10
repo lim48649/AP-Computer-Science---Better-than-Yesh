@@ -33,7 +33,46 @@ public class Program2 {
 		return false;
 	}
 	
+	
 	private static String typeOfTriangle(double a, double b, double c) {
+		double num1 = a;
+		double num2 = b;
+		double num3 = c;
+		
+		if (num1 >= num2 && num1 >= num3) {
+			c = num1;
+			if (num2 > num3) {
+				b = num2;
+				a = num3;
+			}
+			else {
+				b = num3;
+				a = num2;
+			}
+		}
+		else if (num2 >= num1 && num2 >= num3) {
+			c = num2;
+			if (num1 > num3) {
+				b = num1;
+				a = num3;
+			}
+			else {
+				b = num3;
+				a = num1;
+			}
+		}
+		else {
+			c = num3;
+			if (num1 > num2) {
+				b = num1;
+				a = num2;
+			}
+			else {
+				b = num2;
+				a = num1;
+			}
+		}
+		
 		double aPlusBSquared = Math.pow(a, 2) + Math.pow(b, 2);
 		double cSquared = Math.pow(c, 2);
 		if (aPlusBSquared > cSquared)
