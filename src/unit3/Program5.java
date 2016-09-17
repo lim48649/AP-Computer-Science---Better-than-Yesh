@@ -9,7 +9,7 @@ public class Program5 {
 		Scanner input = new Scanner(System.in);
 		
 		boolean running = true;
-		int num = (int) (Math.random() * 100);
+		int num = (int) (Math.random() * 100 + 1);
 		int tries = 0;
 		
 		System.out.println("Guess A Secret Number from 1 to 100: ");
