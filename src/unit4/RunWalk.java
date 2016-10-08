@@ -1,11 +1,11 @@
 package unit4;
 
-import unit4.StreetProgram3Walker;
+import unit4.Walker;
 
-public class StreetProgram3RunWalk {
+public class RunWalk {
 
 	public static void main(String[] args) {
-		StreetProgram3Walker w1 = new StreetProgram3Walker();
+		Walker w1 = new Walker();
 		w1.walk( 5 ); // moves 1 - 5 (random)
 
 		w1.walk( -4 ); // should not move

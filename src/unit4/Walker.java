@@ -1,9 +1,9 @@
 package unit4;
 
-public class StreetProgram3Walker {
+public class Walker {
 	private int x = 0;
 	
-	public StreetProgram3Walker() {
+	public Walker() {
 		x = 0;
 	}
 	
@@ -12,7 +12,6 @@ public class StreetProgram3Walker {
 			return;
 		else {
 			int steps = (int) (Math.random() * (max - 1 + 1)) + 1;
-			System.out.println("Steps: " + steps);
 			x += steps;
 		}
 	}
