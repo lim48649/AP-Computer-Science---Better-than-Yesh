@@ -16,14 +16,10 @@ public class Program4 {
 		else {
 			for (int i = 0; i < num/2 + 1; i++) {
 				for (int j = 0; j < num; j++) {
-					if (i < 0)
+					if (j >= i && j < num-i)
 						System.out.print("o");
-					else {
-						if (j >= i && j < num-i)
-							System.out.print("o");
-						else if (j < i || j >= num-i)
-							System.out.print(".");
-					}
+					else if (j < i || j >= num-i)
+						System.out.print(".");
 				}
 				System.out.println();
 			}
