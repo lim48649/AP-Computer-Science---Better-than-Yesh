@@ -14,6 +14,6 @@ public class Weighted extends Course {
 	
 	@Override
 	public String toString() {
-		return super.getClass() + ": " + super.getGrade() + ", " + "Weighted: " + getWeightedGrade();
+		return super.toString() + ", " + "Weighted: " + getWeightedGrade();
 	}
 }
