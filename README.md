@@ -4,4 +4,4 @@ This repo is a way to keep track of my programs and allow others to have a refer
 
 Please feel free to ask me questions :)
 
-Yesh Chandiramani
+Richard Lim
